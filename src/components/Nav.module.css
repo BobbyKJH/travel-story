@@ -1,0 +1,52 @@
+/* 전체 박스 */
+.box {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background-color: #000;
+  margin: 0 auto;
+  border: 5px solid #000;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* 홈 */
+.homeLink {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  width: 500px;
+  font-size: 36px;
+}
+/* 페이지 이동 */
+.pageLink {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  width: 270px;
+}
+.pageLink:hover {
+  text-decoration: underline;
+  color: azure;
+}
+.signLink {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 6px;
+}
+.signLink:hover {
+  text-decoration: underline;
+}
+.sign {
+  display: block;
+  text-align: center;
+  width: 300px;
+}
