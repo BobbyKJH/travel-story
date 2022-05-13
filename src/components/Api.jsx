@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-export default function Menu() {
+export default function Api() {
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {

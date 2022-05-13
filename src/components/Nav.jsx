@@ -16,6 +16,9 @@ export default function Nav() {
       <Link to="/" className={styles.pageLink}>
         여행 계획
       </Link>
+      <Link to="/" className={styles.pageLink}>
+        여행추천
+      </Link>
       <div className={styles.sign}>
         <Link to="/1" className={styles.signLink}>
           로그인

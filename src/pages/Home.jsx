@@ -1,10 +1,11 @@
-import Menu from "../components/Menu";
+import Exchage from "../components/Exchage";
 import Nav from "../components/Nav";
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
+      <Exchage />
     </>
   );
 }
