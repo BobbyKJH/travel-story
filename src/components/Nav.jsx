@@ -10,8 +10,8 @@ export default function Nav() {
       <Link to="/" className={styles.pageLink}>
         대륙 선택
       </Link>
-      <Link to="/" className={styles.pageLink}>
-        환율 보기
+      <Link to="/exchange" className={styles.pageLink}>
+        환율 계산기
       </Link>
       <Link to="/" className={styles.pageLink}>
         여행 계획
