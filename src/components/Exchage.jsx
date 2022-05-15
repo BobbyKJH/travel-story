@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Exchange.module.css";
 
 export default function Exchage() {
@@ -6,7 +6,9 @@ export default function Exchage() {
   const [list, setList] = useState([]);
   const [num, setNum] = useState("1");
   const [selected, setSelected] = useState("");
+  const refNum = useRef();
 
+  // 금액 입력 함수
   const changeEnteredNum = (e) => {
     const value = e.target.value;
     setNum(value);
@@ -16,13 +18,27 @@ export default function Exchage() {
     if (num >= 1) {
       setNum(e.target.value);
     }
+    if (selected === "") {
+      alert("화페를 선택해주세요.");
+      setNum(1);
+    }
   };
+  // 금액 처음 포커스
+  useEffect(() => {
+    refNum.current.focus();
+  });
+  // 금액 선택 select
   const onSelected = (e) => {
     setSelected(e.target.value);
   };
 
+  // 계산된 금액 천의 자리수 "," 찍어주는 함수
   function numberWithCommas(num) {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    // Number(num.toFixed(2));
+    return num
+      .toFixed(2)
+      .toString()
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
   // 환율관련된 API를 불러온다.
@@ -57,7 +73,12 @@ export default function Exchage() {
       </p>
 
       {/* 바꿀 비용 input 창 */}
-      <input type="number" onChange={changeEnteredNum} value={num} />
+      <input
+        type="number"
+        onChange={changeEnteredNum}
+        value={num}
+        ref={refNum}
+      />
     </div>
   );
 }

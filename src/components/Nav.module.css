@@ -1,3 +1,7 @@
+hr {
+  margin: 0;
+}
+
 /* 전체 박스 */
 .box {
   display: flex;
@@ -32,7 +36,6 @@
 }
 .pageLink:hover {
   text-decoration: underline;
-  color: azure;
 }
 .signLink {
   font-family: "Noto Sans KR", sans-serif;
@@ -48,5 +51,6 @@
 .sign {
   display: block;
   text-align: center;
+  border: 1px solid #fff;
   width: 200px;
 }
