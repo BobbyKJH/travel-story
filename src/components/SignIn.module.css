@@ -9,7 +9,13 @@
   margin: 0 auto;
 }
 .box > h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
   text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
 }
 .box > hr {
   margin: 0;
@@ -38,7 +44,7 @@
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 900;
   border: none;
-  margin: 30px auto;
+  margin: 47px auto;
   width: 330px;
   padding: 10px;
 }

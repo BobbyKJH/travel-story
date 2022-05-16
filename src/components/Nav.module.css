@@ -5,7 +5,6 @@ hr {
 /* 전체 박스 */
 .box {
   display: flex;
-  position: fixed;
   align-items: center;
   background-color: #000;
   margin: 0 auto;

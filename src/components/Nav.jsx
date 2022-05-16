@@ -9,7 +9,7 @@ export default function Nav() {
         여행
       </Link>
       {/* 2 */}
-      <Link to="/" className={styles.pageLink}>
+      <Link to="/continentselect" className={styles.pageLink}>
         대륙 선택
       </Link>
       {/* 3 */}
@@ -30,7 +30,7 @@ export default function Nav() {
           로그인
         </Link>
         <hr />
-        <Link to="/" className={styles.signLink}>
+        <Link to="/signup" className={styles.signLink}>
           회원가입
         </Link>
       </div>

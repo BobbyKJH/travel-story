@@ -1,0 +1,41 @@
+/* 전체 박스 */
+.box {
+  overflow: hidden;
+  width: 500px;
+  height: 700px;
+  border: 5px solid #000;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.box > h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.box > p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  color: #ff0000;
+  height: 18.5px;
+  margin: 0;
+}
+/* 입력 창 */
+.input {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  margin: 0 auto;
+  width: 330px;
+  padding: 10px;
+}
+.input:focus {
+  border-color: #0080ff;
+}

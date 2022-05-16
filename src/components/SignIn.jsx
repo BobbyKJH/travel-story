@@ -7,6 +7,7 @@ export default function SignIn() {
   const [id, setId] = useState("");
   // Password Hook
   const [password, setPassword] = useState("");
+  // 페이지가 렌더링 되고 id를 focus 시켜주는 useRef
   const idRef = useRef();
 
   useEffect(() => {
@@ -59,7 +60,7 @@ export default function SignIn() {
 
       <hr />
       <div className={styles.joinBox}>
-        <Link to="/">회원가입</Link>
+        <Link to="/signup">회원가입</Link>
         <hr />
         <Link to="/">아이디 찾기</Link>
         <hr />

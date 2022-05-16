@@ -26,7 +26,7 @@ export default function Exchage() {
   // 금액 처음 포커스
   useEffect(() => {
     refNum.current.focus();
-  });
+  }, [selected]);
   // 금액 선택 select
   const onSelected = (e) => {
     setSelected(e.target.value);
@@ -34,7 +34,6 @@ export default function Exchage() {
 
   // 계산된 금액 천의 자리수 "," 찍어주는 함수
   function numberWithCommas(num) {
-    // Number(num.toFixed(2));
     return num
       .toFixed(2)
       .toString()
