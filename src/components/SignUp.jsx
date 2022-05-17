@@ -13,13 +13,14 @@ export default function SignUp() {
   const [passwordError2, setPasswordError2] = useState("");
 
   const refId = useRef();
-  const refPassword = useRef();
+  // const refPassword = useRef();
 
+  // 처음 렌더링시 id에 focus 되어있도록 해준다.
   useEffect(() => {
     refId.current.focus();
-  });
+  }, []);
 
-  // id onChange
+  // id onChange 아이디 입력창
   const ID = (e) => {
     setId(e.target.value);
     if (id.length < 7) {
@@ -28,24 +29,26 @@ export default function SignUp() {
       setIdError("");
     }
   };
-  // password1 onChange
+  // password1 onChange 비밀번호 입력
   const PW = (e) => {
     setPassword1(e.target.value);
-    if (password1.length < 8) {
+    if (password1.length < 7) {
       setPasswordError1("비밀번호를 8자리 이상 입력해주세요.");
     } else {
       setPasswordError1("");
     }
   };
-  // password2 onChange
+  // password2 onChange 비밀번호 확인
   const PWCheck = (e) => {
     setPassword2(e.target.value);
-    if (password1 === password2) {
-      setPasswordError2("비밀번호가 일치합니다");
-    } else {
+    if (password1 !== password2) {
       setPasswordError2("비밀번호가 일치하지 않습니다.");
     }
+    if (password1 === password2) {
+      setPasswordError2("");
+    }
   };
+
   return (
     <div className={styles.box}>
       <h2>회원가입</h2>
@@ -62,7 +65,7 @@ export default function SignUp() {
 
       {/* 비밀번호 생성 */}
       <input
-        type="text"
+        type="password"
         className={styles.input}
         placeholder="비밀번호를 입력해주세요."
         onChange={PW}
@@ -72,7 +75,7 @@ export default function SignUp() {
 
       {/* 비밀번호 확인 */}
       <input
-        type="text"
+        type="password"
         className={styles.input}
         placeholder="비밀번호를 다시 한번 입력해주세요."
         onChange={PWCheck}

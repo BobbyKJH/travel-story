@@ -1,0 +1,19 @@
+.list {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.total {
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+}
+.total > img {
+  width: 300px;
+  height: 150px;
+}

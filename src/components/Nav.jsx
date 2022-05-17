@@ -10,11 +10,11 @@ export default function Nav() {
       </Link>
       {/* 2 */}
       <Link to="/continentselect" className={styles.pageLink}>
-        대륙 선택
+        나라보기
       </Link>
       {/* 3 */}
       <Link to="/" className={styles.pageLink}>
-        여행 계획
+        여행계획
       </Link>
       {/* 4 */}
       <Link to="/" className={styles.pageLink}>
