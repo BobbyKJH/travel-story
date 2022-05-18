@@ -1,3 +1,4 @@
+/* Nav Bar Component */
 import { Link } from "react-router-dom";
 import styles from "./Nav.module.css";
 
@@ -9,16 +10,16 @@ export default function Nav() {
         여행
       </Link>
       {/* 2 */}
-      <Link to="/continentselect" className={styles.pageLink}>
-        나라보기
-      </Link>
-      {/* 3 */}
       <Link to="/" className={styles.pageLink}>
         여행계획
       </Link>
-      {/* 4 */}
+      {/* 3 */}
       <Link to="/" className={styles.pageLink}>
         여행추천
+      </Link>
+      {/* 4 */}
+      <Link to="/continentselect" className={styles.pageLink}>
+        나라
       </Link>
       {/* 5 */}
       <Link to="/exchange" className={styles.pageLink}>

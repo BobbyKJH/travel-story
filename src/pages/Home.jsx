@@ -1,14 +1,12 @@
-import styles from "./Home.module.css";
-import Asia from "../components/Continent/Asia";
+// import styles from "./Home.module.css";
 import Nav from "../components/Nav";
+import Todo from "../components/Todo";
 
 export default function Home() {
   return (
     <>
       <Nav />
-      <div className={styles.aaa}>
-        <Asia />
-      </div>
+      <Todo />
     </>
   );
 }

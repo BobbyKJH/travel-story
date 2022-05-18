@@ -1,0 +1,35 @@
+/* 전체 박스 */
+.box {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+  border-radius: 150px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+.box:hover {
+  font-size: 36px;
+  color: #fff;
+}
+/* Circle (White) */
+.whiteBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 150px;
+  z-index: 1;
+  transition: 0.5s;
+  width: 200px;
+  height: 200px;
+}
+.whiteBox:hover {
+  background-color: #000;
+}
