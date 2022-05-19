@@ -5,6 +5,7 @@ import styles from "./Exchange.module.css";
 export default function Exchage() {
   // ExChange List
   const [list, setList] = useState([]);
+
   const [num, setNum] = useState("1");
   const [selected, setSelected] = useState("");
   const refNum = useRef();

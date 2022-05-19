@@ -10,7 +10,7 @@ export default function Nav() {
         여행
       </Link>
       {/* 2 */}
-      <Link to="/" className={styles.pageLink}>
+      <Link to="/plan" className={styles.pageLink}>
         여행계획
       </Link>
       {/* 3 */}
@@ -21,16 +21,20 @@ export default function Nav() {
       <Link to="/continentselect" className={styles.pageLink}>
         나라
       </Link>
-      {/* 5 */}
+      {/* 5  */}
+      <Link to="/countrylocation" className={styles.pageLink}>
+        지도
+      </Link>
+      {/* 6 */}
       <Link to="/exchange" className={styles.pageLink}>
         환율 계산기
       </Link>
-      {/* 6 */}
+      {/* 7 */}
       <div className={styles.sign}>
         <Link to="/signin" className={styles.signLink}>
           로그인
         </Link>
-        <hr />
+        <br />
         <Link to="/signup" className={styles.signLink}>
           회원가입
         </Link>

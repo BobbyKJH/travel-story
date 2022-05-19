@@ -21,6 +21,7 @@ export default function Continent({ link }) {
     <div className={styles.list}>
       {list.map((flag) => (
         <Selected
+          key={flag.country_nm}
           country_nm={flag.country_nm}
           download_url={flag.download_url}
         />
