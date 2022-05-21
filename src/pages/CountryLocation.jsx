@@ -1,11 +1,12 @@
 import React from "react";
+import Location from "../components/map/Location";
 import Nav from "../components/Nav";
 
 function CountryLocation() {
   return (
     <>
       <Nav />
-      11111111CountryLocation
+      <Location />
     </>
   );
 }
