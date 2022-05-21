@@ -6,13 +6,10 @@ hr {
 .box {
   display: flex;
   align-items: center;
-  background-color: #000;
+  background-color: #00aaff;
   margin: 0 auto;
-  border: 5px solid #000;
-  padding: 20px 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  border: 5px solid #00aaff;
+  padding: 10px 0;
 }
 /* 홈 */
 .homeLink {
@@ -22,12 +19,13 @@ hr {
   text-decoration: none;
   color: #fff;
   width: 420px;
-  font-size: 36px;
+  font-size: 200%;
 }
 /* 페이지 이동 */
 .pageLink {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 900;
+  font-size: 20%;
   text-decoration: none;
   text-align: center;
   box-sizing: border-box;

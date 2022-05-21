@@ -48,8 +48,8 @@ export default function Exchage() {
       .then((response) => response.json())
       .then((json) => {
         // let js = new Object(json);
-        setList(json.리스트);
-        console.log(json.리스트);
+        setList(json.list);
+        console.log(json.list.매매기준율);
       });
   }, []);
 
@@ -61,8 +61,12 @@ export default function Exchage() {
       {/* 환율 기준표 */}
       <select className={styles.select} value={selected} onChange={onSelected}>
         {list.map((money) => (
-          <option value={money.매매기준율} key={money.id}>
-            {money.통화명} ({money.기호})
+          <option
+            className={styles.currency}
+            value={money.매매기준율}
+            key={money.id}
+          >
+            {money.통화명} {money.sign}
           </option>
         ))}
       </select>

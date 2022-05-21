@@ -4,14 +4,17 @@ import styles from "./SignUp.module.css";
 export default function SignUp() {
   // 아이디 만들기
   const [id, setId] = useState("");
-  const [idError, setIdError] = useState("");
+  const [idError, setIdError] = useState("아이디는 7자리 이상 입력해주세요.");
   // 비밀번호 만들기
   const [password1, setPassword1] = useState("");
-  const [passwordError1, setPasswordError1] = useState("");
+  const [passwordError1, setPasswordError1] = useState(
+    "비밀번호를 8자리 이상 입력해주세요."
+  );
   // 비밀번호 확인
   const [password2, setPassword2] = useState("");
   const [passwordError2, setPasswordError2] = useState("");
 
+  // 렌더링 focus()
   const refId = useRef();
   // const refPassword = useRef();
 
@@ -24,11 +27,12 @@ export default function SignUp() {
   const ID = (e) => {
     setId(e.target.value);
     if (id.length < 7) {
-      setIdError("아이디를 8자리 이상 입력해주세요.");
+      setIdError("아이디는 7자리 이상입니다.");
     } else {
       setIdError("");
     }
   };
+
   // password1 onChange 비밀번호 입력
   const PW = (e) => {
     setPassword1(e.target.value);
@@ -41,11 +45,8 @@ export default function SignUp() {
   // password2 onChange 비밀번호 확인
   const PWCheck = (e) => {
     setPassword2(e.target.value);
-    if (password1 !== password2) {
-      setPasswordError2("비밀번호가 일치하지 않습니다.");
-    }
     if (password1 === password2) {
-      setPasswordError2("");
+      setPasswordError2("비밀번호가 일치하지 않습니다.");
     }
   };
 
@@ -84,7 +85,11 @@ export default function SignUp() {
       <p>{passwordError2}</p>
 
       {/* 전화번호 입력 */}
-      <input type="text" className={styles.input} />
+      <input
+        type="text"
+        className={styles.input}
+        placeholder="전화번호를 입력해주세요."
+      />
     </div>
   );
 }

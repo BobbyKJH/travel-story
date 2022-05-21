@@ -25,6 +25,12 @@
   text-align: center;
   box-shadow: 10px 10px 5px 5px;
 }
+.select > .currency {
+  color: aqua3;
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+}
 /* 현재 금액 */
 .total {
   font-family: "Noto Sans KR", sans-serif;
